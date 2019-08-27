@@ -1372,4 +1372,8 @@ h6 {
   #contact-social{
     margin-left: 20%
   }
+  .map iframe{
+    height: 50%;
+    width: 80%
+  }
 }

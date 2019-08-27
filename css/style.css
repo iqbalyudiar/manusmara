@@ -353,9 +353,9 @@ h6 {
   z-index: 9999;
   overflow-y: auto;
   left: -260px;
-  width: 260px;
+  width: 200px;
   padding-top: 18px;
-  background: rgba(19, 39, 57, 0.8);
+  background: rgba(2, 48, 7, 0.9);
   transition: 0.4s;
 }
 
@@ -376,7 +376,7 @@ h6 {
 .mobile-nav a:hover,
 .mobile-nav .active > a,
 .mobile-nav li:hover > a {
-  color: #74b5fc;
+  color: #14e32a;
   text-decoration: none;
 }
 
@@ -432,7 +432,7 @@ h6 {
   top: 0;
   left: 0;
   position: fixed;
-  background: rgba(19, 39, 57, 0.8);
+  background: rgba(16, 156, 30, 0.5);
   overflow: hidden;
   display: none;
 }
@@ -635,7 +635,7 @@ h6 {
 }
 
 #services .box:hover .title a {
-  color: #007bff;
+  color: #109c1e;
 }
 
 #services .description {
@@ -1314,7 +1314,7 @@ h6 {
   #intro .intro-img {
     width: 80%;
     float: none;
-    margin: 0 auto 25px auto;
+    margin: 0 auto 25px 25px;
   }
 
   #intro .intro-info {
@@ -1323,6 +1323,8 @@ h6 {
     margin: auto;
     text-align: center;
   }
+
+  
 
   #why-us .card {
     margin: 0;
@@ -1375,5 +1377,9 @@ h6 {
   .map iframe{
     height: 50%;
     width: 80%
+  }
+  #intro .intro-img img{
+    margin-bottom: 0 !important; 
+    margin-left: 0 !important;
   }
 }

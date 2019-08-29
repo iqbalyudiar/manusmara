@@ -999,6 +999,9 @@ h6 {
 #clients img {
   transition: all 0.4s ease-in-out;
 }
+#clients-content #capture{
+  display:none
+}
 
 /* Contact Section
 --------------------------------*/
@@ -1071,8 +1074,10 @@ h6 {
 #contact .info p {
   padding: 0 0 10px 36px;
   line-height: 28px;
-  font-size: 14px;
+  font-size: 0.8vw;
 }
+
+
 
 #contact .form #sendmessage {
   color: #007bff;
@@ -1289,11 +1294,43 @@ h6 {
 /*--------------------------------------------------------------
 # Responsive Media Queries
 --------------------------------------------------------------*/
+@media (max-width: 1700px) {
+  #intro .intro-img img{
+    margin-bottom: 0 !important; 
+    margin-left: 20% !important;
+  }
+  /* #contact-bottom div p{
+    font-size: 0.75em
+  } */
+  /* #contact .info #address, #contact .info #email, #contact .info #phone1, #contact .info #phone2{
+    margin-left: 0.5px;
+    margin-right: 0px;
+    font-size: 10px
+  } */
+}
+
+@media (min-width: 1200px){
+  /* #contact-bottom div p{
+    font-size: 0.5em
+  } */
+  .map iframe{
+    height: 50%;
+    width: 70%
+  }
+}
 
 @media (min-width: 992px) {
   #testimonials .testimonial-item p {
     width: 80%;
   }
+  .map iframe{
+    height: 50%;
+    width: 80%
+  }
+  /* #contact-bottom div p{
+    font-size: 0.75em !important
+  } */
+  
 }
 
 @media (max-width: 991px) {
@@ -1323,8 +1360,20 @@ h6 {
     margin: auto;
     text-align: center;
   }
-
-  
+  .map iframe{
+    height: 50%;
+    width: 80%
+  }
+  p #address{
+    font-size: 0.8em !important
+  }
+  #contact .info p{
+    font-size: 1vw !important;
+  }
+  #contact .info{
+    margin-left: 0px;
+    padding-left: 0px;
+  }
 
   #why-us .card {
     margin: 0;
@@ -1334,6 +1383,20 @@ h6 {
 @media (max-width: 768px) {
   .back-to-top {
     bottom: 15px;
+  }
+  #intro .intro-img img{
+    margin-bottom: 0 !important; 
+    margin-left: 10% !important;
+  }
+  #clients-content .client-logo{
+    display: none
+  }
+  #clients-content #capture{
+    display: block;
+    padding-left: 100px;
+  }
+  #capture img{
+    width:20em
   }
 }
 
@@ -1365,11 +1428,25 @@ h6 {
   #testimonials .testimonial-item p {
     margin-left: 0;
   }
+  .map iframe{
+    height: 60%;
+    width: 90%;
+  }
+  #contact .info p{
+    font-size: 2vw !important;
+  }
+  #contact .info{
+    margin-left: 40px;
+  }
 }
 
 @media (max-width: 574px) {
   #intro {
     padding: 100px 0 20px 0;
+  }
+  #intro .intro-img img{
+    margin-bottom: 0 !important; 
+    margin-left: 100px !important;
   }
   #contact-social{
     margin-left: 20%
@@ -1381,5 +1458,25 @@ h6 {
   #intro .intro-img img{
     margin-bottom: 0 !important; 
     margin-left: 0 !important;
+  }
+  #clients-content .client-logo{
+    display: none
+  }
+  #clients-content #capture{
+    display: block;
+    padding-left: 100px;
+  }
+  #capture img{
+    width:20em
+  }
+}
+
+@media (max-width: 360px){
+  #clients-content #capture{
+    display: block;
+    padding-left: 0
+  }
+  #capture img{
+    width:17em
   }
 }

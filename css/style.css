@@ -1433,7 +1433,8 @@ h6 {
     width: 90%;
   }
   #contact .info p{
-    font-size: 2vw !important;
+    font-size: 1em !important;
+    
   }
   #contact .info{
     margin-left: 40px;
@@ -1478,5 +1479,12 @@ h6 {
   }
   #capture img{
     width:17em
+  }
+  
+}
+
+@media (min-width: 361px){
+  #contact .info p{
+    font-size: 1em1em !important;
   }
 }
